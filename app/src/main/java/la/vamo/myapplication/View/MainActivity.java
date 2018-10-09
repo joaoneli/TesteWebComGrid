@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -95,6 +96,9 @@ public class MainActivity extends AppCompatActivity {
                                            TextView tvCidade;
                                            TextView tvEstado;
                                            TextView tvBairro;
+                                        //   ImageView ivImagem;
+
+
                                        }
 
                                        @Override
@@ -123,6 +127,7 @@ public class MainActivity extends AppCompatActivity {
                                                viewHolder.tvCidade = convertView.findViewById(R.id.tvCidade);
                                                viewHolder.tvEstado = convertView.findViewById(R.id.tvEstado);
                                                viewHolder.tvBairro = convertView.findViewById(R.id.tvBairro);
+                                            //   viewHolder.ivImagem = convertView.findViewById(R.id.ivImagem);
                                            }
                                            else
                                                viewHolder = (ViewHolder) convertView.getTag();
@@ -131,6 +136,7 @@ public class MainActivity extends AppCompatActivity {
                                            viewHolder.tvCidade.setText(item.getData().getCidade().getIv());
                                            viewHolder.tvEstado.setText(item.getData().getEstado().getIv());
                                            viewHolder.tvBairro.setText(item.getData().getBairro().getIv());
+                                          // viewHolder.ivImagem.setImageResource(item.getData().getImagem());
                                            //
                                            return convertView;
                                        }

@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class Data implements Serializable
 {
-    private  Integer imagem;
+    //private  Integer imagem;
     private StringValue nome;
     private StringValue cidade;
     private StringValue estado;
@@ -48,11 +48,11 @@ public class Data implements Serializable
         this.bairro = bairro;
     }
 
-    public Integer getImagem() {
+ /*   public Integer getImagem() {
         return imagem;
     }
 
     public void setImagem(Integer imagem) {
         this.imagem = imagem;
-    }
+    }*/
 }

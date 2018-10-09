@@ -185,6 +185,10 @@ public class CadastroActivity extends AppCompatActivity {
         data.setEstado(new StringValue(spEstado.getSelectedItem().toString()));
         data.setBairro(new StringValue(etBairro.getText().toString()));
 
+       /* if(spEstado.getSelectedItem().equals("SP"))
+        {
+            data.setImagem(R.drawable.ic_brightness_7_black);
+        }*/
         //
         try
         {
@@ -238,6 +242,7 @@ public class CadastroActivity extends AppCompatActivity {
             etCidade.setText(item.getData().getCidade().getIv());
             etNome.setText(item.getData().getNome().getIv());
             etBairro.setText(item.getData().getBairro().getIv());
+           // ivImagem.setImageResource(item.getData().getImagem());
             for (int i = 1; i < spEstado.getCount(); i++)
             {
                 if (((String) spEstado.getItemAtPosition(i)).equals(item.getData().getEstado().getIv()))
